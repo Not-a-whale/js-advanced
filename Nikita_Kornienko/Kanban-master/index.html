@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Kanban board</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="form-group header__form-group">
+          <label for="usr">Task:</label>
+          <input
+            type="text"
+            class="form-control header__form-control"
+            id="usr"
+          />
+        </div>
+        <div class="header__button-group">
+          <button
+            type="button"
+            class="btn btn-primary btn-lg header__btn"
+            id="addTask"
+          >
+            Add task
+          </button>
+          <button
+            type="button"
+            class="btn btn-success btn-lg header__btn"
+            id="fetchTasks"
+          >
+            Fetch tasks
+          </button>
+        </div>
+      </div>
+      <div class="to-do mt-2 mb-4">
+        <div class="to-do__header bg-primary ">
+          <h2 class="mt-2">TO DO</h2>
+        </div>
+      </div>
+      <div class="doing mt-2 mb-4">
+        <div class="doing__header bg-warning">
+          <h2 class="mt-2">DOING</h2>
+        </div>
+      </div>
+      <div class="done mt-2 mb-4">
+        <div class="done__header bg-success">
+          <h2 class="mt-2">DONE!</h2>
+        </div>
+      </div>
+    </div>
+
+    <script src="./dist/bundle.js"></script>
+  </body>
+</html>

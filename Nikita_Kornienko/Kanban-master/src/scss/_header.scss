@@ -1,0 +1,40 @@
+.header {
+    grid-area: head;
+    background-color: #F9F5F3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+
+    &__btn {
+        width: 15rem;
+        height: 3.5rem;
+    }
+
+    .form-group {
+        label {
+            font-size: 1.5rem;
+        }
+        input {
+            width: 30rem !important;
+            height: 3rem;
+            font-size: 1.4rem;
+            @media screen and (max-width: 68.75em) {
+                width: 15rem;
+            }
+        }
+    }
+
+    &__button-group {
+        width: 35%;
+        margin-top: 10px;
+        margin-left: 4rem;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 68.75em) {
+            margin-top: 2px;
+            margin-left: 2rem;
+            width: 40%;
+        }
+    }
+}
